@@ -1,19 +1,31 @@
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router,
+  Routes,
+  Route, 
 } from 'react-router-dom';
 
-import Navigation from './components/Layout/Navigation/Navigation';
-import Footer from './components/Layout/Footer/Footer';
-
+import Home from './pages/Home/Home';
+import StartApp from './pages/StartApp/StartApp';
+import Error404 from './pages/Error404/Error404';
 
 function App() {
   return (
-    <div>
-      <Navigation/>
+    <>
       <Router>
+        <Routes >
+          <Route 
+            path='/' 
+            element={<Home/>}></Route>
+          <Route 
+            path='/app' 
+            element={<StartApp/>}></Route>
+          <Route 
+            path='/*' 
+            element={<Error404/>}></Route>
+        </Routes>
+        
       </Router>
-      <Footer/>
-    </div>
+    </>
   );
 }
 
