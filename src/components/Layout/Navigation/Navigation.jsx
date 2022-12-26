@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from './../../../assets/logo.PNG'
+import logo from './../../../assets/logo.PNG';
 const Navigation = () => {
   return (
     <nav className="pt-4 pb-4 bg-neutral-900 w-full top-0 z-50 absolute">
@@ -11,10 +11,7 @@ const Navigation = () => {
               </NavLink>
           </li>
         </ul>
-      </div>
-                  
-          
-        
+      </div>  
     </nav>
   )
 }
