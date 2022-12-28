@@ -10,7 +10,8 @@ module.exports = {
         
       },
       fontFamily: {
-        'roboto': ['Roboto', 'sans-serif']
+        'roboto': ['Roboto', 'sans-serif'],
+        'empire' : ['Empire' , 'sans-serif']
       },
     },
     container: {

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from './../../../assets/logo.PNG';
+
 const Navigation = () => {
   return (
     <nav className="pt-4 pb-4 bg-neutral-900 w-full top-0 z-50 absolute">
@@ -7,7 +7,7 @@ const Navigation = () => {
         <ul className="  flex justify-center text-white">
           <li className="">
               <NavLink exact to="/" >
-                <img src={logo} alt="Street-Art-TO" />
+                <div className="font-empire text-white text-5xl">Street-Art-To</div>
               </NavLink>
           </li>
         </ul>

@@ -1,5 +1,5 @@
-import Hero from "../../components/Layout/Hero/Hero"
-import Navigation from "../../components/Layout/Navigation/Navigation"
+import Hero from "../../components/Layout/Hero"
+import Navigation from "../../components/Layout/Navigation"
 
 const Home = () => {
   return (
