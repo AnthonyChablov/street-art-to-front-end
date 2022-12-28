@@ -17,15 +17,18 @@ function App() {
         <Routes >
           <Route 
             path='/' 
-            element={<Home/>}>
+            element={<Home/>}
+          >
           </Route>
           <Route 
             path='/app' 
-            element={<StartApp/>}>
+            element={<StartApp/>}
+          >
           </Route>
           <Route 
             path='/*' 
-            element={<Error404/>}>
+            element={<Error404/>}
+          >
           </Route>
         </Routes>
       </Suspense>
