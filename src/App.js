@@ -4,6 +4,7 @@ import {
   Routes,
   Route, 
 } from 'react-router-dom';
+import Loader from "./components/Loader/Loader";
 
 /* Lazy Load Pages */
 const Home = lazy(() => import('./pages/Home/Home'));
@@ -13,7 +14,7 @@ const Error404 = lazy(() => import('./pages/Error404/Error404'));
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader/>}>
         <Routes >
           <Route 
             path='/' 

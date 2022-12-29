@@ -16,18 +16,18 @@ const center = {
 function Map() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY ,
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
   })
 
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
     setMap(map)
-  }, [])
+  }, []);
 
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null)
-  }, [])
+  }, []);
 
   return isLoaded ? (
     /* Google map box */
@@ -43,7 +43,7 @@ function Map() {
           streetViewControl: false,
           mapTypeControl: false,
           fullscreenControl: false,
-          mapId: process.env.GOOGLE_MAPS_ID
+          mapId: process.env.REACT_APP_GOOGLE_MAPS_ID 
         }}
       >
         <Marker position={center}/>
@@ -53,6 +53,7 @@ function Map() {
         <></>
       </GoogleMap>
     </div>
+    /* Loader */
   ) : <Loader/>
 }
 
