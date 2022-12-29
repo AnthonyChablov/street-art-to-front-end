@@ -1,9 +1,11 @@
 import React from 'react'
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import Loader from '../Loader/Loader';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px'
+  width: '100%',
+  height: '100%',
+  dark: 'dark'
 };
 
 const center = {
@@ -14,16 +16,12 @@ const center = {
 function Map() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "YOUR_API_KEY"
+    googleMapsApiKey: GOOGLE_MAPS_API_KEY ,
   })
 
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-
     setMap(map)
   }, [])
 
@@ -32,17 +30,30 @@ function Map() {
   }, [])
 
   return isLoaded ? (
+    /* Google map box */
+    <div className='h-screen w-screen'>
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        zoom={14}
         onLoad={onLoad}
         onUnmount={onUnmount}
+        options ={{
+          zoomControl: false,
+          streetViewControl: false,
+          mapTypeControl: false,
+          fullscreenControl: false,
+          mapId: GOOGLE_MAPS_ID
+        }}
       >
-        { /* Child components, such as markers, info windows, etc. */ }
+        <Marker position={center}/>
+        { 
+          /* Child components, such as markers, info windows, etc. */ 
+        }
         <></>
       </GoogleMap>
-  ) : <></>
+    </div>
+  ) : <Loader/>
 }
 
 export default React.memo(Map);
