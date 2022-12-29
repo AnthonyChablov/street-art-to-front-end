@@ -16,7 +16,7 @@ const center = {
 function Map() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: GOOGLE_MAPS_API_KEY ,
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY ,
   })
 
   const [map, setMap] = React.useState(null)
@@ -43,7 +43,7 @@ function Map() {
           streetViewControl: false,
           mapTypeControl: false,
           fullscreenControl: false,
-          mapId: GOOGLE_MAPS_ID
+          mapId: process.env.GOOGLE_MAPS_ID
         }}
       >
         <Marker position={center}/>
