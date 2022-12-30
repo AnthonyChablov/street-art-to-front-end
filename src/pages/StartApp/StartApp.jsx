@@ -13,7 +13,6 @@ const StartApp = () => {
   }; */
 
   const windowDimensions = useWindowSize();
-
   return (
     <>
       <Map/>

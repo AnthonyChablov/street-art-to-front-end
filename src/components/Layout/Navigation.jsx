@@ -6,9 +6,7 @@ const Navigation = () => {
       <div className="container mx-auto">
         <ul className="flex justify-center">
           <li className="">
-              
               <div className="font-empire text-zinc-200 text-3xl">Street-Art-To</div>
-              
           </li>
         </ul>
       </div>  
