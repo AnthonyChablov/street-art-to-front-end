@@ -31,7 +31,7 @@ function Map() {
 
   return isLoaded ? (
     /* Google map box */
-    <div className='h-screen w-screen'>
+    <div className='h-screen w-screen '>
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

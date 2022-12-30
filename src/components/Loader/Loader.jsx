@@ -1,7 +1,7 @@
 
 const Loader = () => {
   return (
-    <div className="bg-black">Loader</div>
+    <div className="bg-black h-screen">Loader</div>
   )
 }
 
