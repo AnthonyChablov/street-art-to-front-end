@@ -10,6 +10,9 @@ import Loader from "./components/Loader/Loader";
 const Home = lazy(() => import('./pages/Home/Home'));
 const StartApp = lazy(() => import('./pages/StartApp/StartApp'));
 const Error404 = lazy(() => import('./pages/Error404/Error404'));
+const SignIn = lazy(() => import('./pages/SignIn/SignIn'));
+const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
+
 
 function App() {
   return (
@@ -24,6 +27,16 @@ function App() {
           <Route 
             path='/app' 
             element={<StartApp/>}
+          >
+          </Route>
+          <Route 
+            path='/sign-in' 
+            element={<SignIn/>}
+          >
+          </Route>
+          <Route 
+            path='/sign-up' 
+            element={<SignUp/>}
           >
           </Route>
           <Route 

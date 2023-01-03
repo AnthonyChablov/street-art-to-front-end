@@ -1,6 +1,8 @@
 import React from 'react'
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, MarkerF } from '@react-google-maps/api';
 import Loader from '../Loader/Loader';
+import streetArtData from "../../data/streetArtData.json";
+
 
 const containerStyle = {
   width: '100%',
@@ -46,11 +48,13 @@ function Map() {
           mapId: process.env.REACT_APP_GOOGLE_MAPS_ID 
         }}
       >
-        <Marker position={center}/>
         { 
           /* Child components, such as markers, info windows, etc. */ 
+          /* streetArtData.features.map( 
+            (elem, i) => <MarkerF position={{lat:elem.geometry?.coordinates[0],  
+            lng:elem.geometry?.coordinates[1]}}/>
+          )  */
         }
-        <></>
       </GoogleMap>
     </div>
     /* Loader */

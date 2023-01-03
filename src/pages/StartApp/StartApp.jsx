@@ -17,7 +17,7 @@ const StartApp = () => {
     <>
       <Map/>
       {
-        /* render Sidebar for mobile, Card for large screens  */
+        /* render Sidebar for mobile, Card for large screens */
         windowDimensions.width >= 850
           ? <Card/> 
           : <>
