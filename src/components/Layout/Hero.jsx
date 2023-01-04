@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="pt-10 text-white text-md w-9/12 text-center mx-auto sm:text-lg ">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio non repudiandae officiis in aliquid saepe recusandae a, odit consequatur nesciunt. Alias dolor eveniet voluptatibus delectus quas accusantium ea dignissimos sapiente!
         </div>
-        <NavLink exact to="/app" >
+        <NavLink exact to="/sign-in" >
           <Button 
             size="large"
             variant="contained" 
@@ -26,7 +26,7 @@ const Hero = () => {
               }
             }}
           >
-            Launch App
+            Get Started
           </Button>
         </NavLink>
       </div>

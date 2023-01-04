@@ -1,8 +1,12 @@
-import React from 'react'
+import Navigation from "./../../components/Layout/Navigation";
+import Register from "./../../components/SignUp/Register";
 
 const SignUp = () => {
   return (
-    <div>SignUp</div>
+    <>
+      <Navigation/>
+      <Register/>
+    </>
   )
 }
 

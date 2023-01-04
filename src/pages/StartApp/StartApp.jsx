@@ -1,17 +1,12 @@
 import Map from "../../components/Map/Map";
-import Navigation from "../../components/Layout/Navigation";
+import Header from "../../components/Layout/Header"
 import SideBar from "../../components/Map/SideBar";
 import Card from '../../components/Map/Card';
-import { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 
 
 const StartApp = () => {
-  /* const [open, setOpen] = useState(false);
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
-  }; */
-
+  
   const windowDimensions = useWindowSize();
   return (
     <>
@@ -21,7 +16,7 @@ const StartApp = () => {
         windowDimensions.width >= 850
           ? <Card/> 
           : <>
-              <Navigation/>
+              <Header/>
               <SideBar/>
             </> 
       }

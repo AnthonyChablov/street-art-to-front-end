@@ -1,7 +1,13 @@
+import Navigation from "./../../components/Layout/Navigation";
+import Login from '../../components/SignIn/Login';
 
 const SignIn = () => {
   return (
-    <div>SignIn</div>
+    <>
+        <Navigation/> 
+        <Login/>
+    </>
+    
   )
 }
 

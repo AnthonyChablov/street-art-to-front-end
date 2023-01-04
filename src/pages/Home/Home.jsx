@@ -3,7 +3,7 @@ import Navigation from "../../components/Layout/Navigation"
 
 const Home = () => {
   return (
-    <div className="min-h-screen font-roboto ">
+    <div className="min-h-screen  ">
       <Navigation/>
       <Hero/>
     </div>
