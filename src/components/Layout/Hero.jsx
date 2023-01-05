@@ -1,36 +1,41 @@
-import { Button } from "@mui/material";
+
 import { NavLink } from "react-router-dom";
+
 
 const Hero = () => {
   return (
-    <div className="bg-heroImage bg-no-repeat bg-left h-screen w-screen ">
-      <div className="text-center px-4 sm:container sm:mx-auto sm:px-20 md:px-40 lg:px-60">
-        <div className="pt-40 text-white text-4xl md:pt-60">Lorem ipsum dolor sit amet consectetur elit</div>
-        <div className="pt-10 text-white text-md w-9/12 text-center mx-auto sm:text-lg ">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio non repudiandae officiis in aliquid saepe recusandae a, odit consequatur nesciunt. Alias dolor eveniet voluptatibus delectus quas accusantium ea dignissimos sapiente!
-        </div>
-        <NavLink exact to="/sign-in" >
-          <Button 
-            size="large"
-            variant="contained" 
-            sx={{
-              color:'white',
-              textDecoration:"none",
-              backgroundColor:'teal',
-              marginTop:"3.5em",
-              boxShadow:'rgba(0, 0, 0, 0.35) 0px 5px 15px;',
-              '&:hover': {
-                backgroundColor:'teal', 
-                scale:"1.04",
-                boxShadow:'rgba(0, 0, 0, 0.35) 0px 5px 15px;'
-              }
-            }}
-          >
+  <section className="relative bg-heroImage bg-cover bg-center bg-no-repeat">
+    <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/90 sm:to-white/25">
+    </div>
+    <div className="relative mx-auto max-w-screen-xl px-4 py-32 h-screen  
+      sm:px-6 md:px-8 
+      md:items-center lg:flex lg:h-screen lg:items-center ">
+      <div className="max-w-xl text-center sm:text-left">
+        <h1 className="text-3xl font-roboto sm:text-5xl">
+          Embrace Street Art
+          <strong className="block font-roboto text-sky-700">
+            Made In Toronto.
+          </strong>
+        </h1>
+        <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
+          Discover street-art, graffiti and murals created by the many talented 
+          artists throughout Toronto!
+        </p>
+        <div className="mt-8 flex flex-wrap gap-4 text-center">
+          <a href="#" className="block w-full rounded bg-sky-800 px-12 py-3 text-sm font-medium text-white shadow 
+            hover:bg-sky-600 focus:outline-none focus:ring 
+            active:bg-sky-700 sm:w-auto">
             Get Started
-          </Button>
-        </NavLink>
+          </a>
+          <a href="#" className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-sky-600 shadow 
+          hover:bg-sky-100 focus:outline-none focus:ring active:text-sky-700 sm:w-auto">
+            Learn More
+          </a>
+        </div>
       </div>
     </div>
+  </section>
+
   )
 }
 

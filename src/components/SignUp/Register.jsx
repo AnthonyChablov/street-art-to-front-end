@@ -1,4 +1,14 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import { toast } from 'react-toastify';
+
+const notify = () => toast.success('Thankyou for reaching out, I will get back to you shortly.', {
+  closeOnClick: true,
+  autoClose: 1800
+});
+
+/* TODO Create form submit using reqct query and return toast if validation unsiccesful */
+/* post req if user exists toast, else app */
+
 const Register = () => {
   return (
     <div className="h-screen bg-neutral-800">

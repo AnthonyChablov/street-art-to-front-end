@@ -1,5 +1,13 @@
-
 import { NavLink } from "react-router-dom"
+import { toast } from 'react-toastify';
+
+const notify = () => toast.success('Thankyou for reaching out, I will get back to you shortly.', {
+  closeOnClick: true,
+  autoClose: 1800
+});
+
+/* TODO Create form submit using react-query and return toast if validation unsiccesful */
+/* get req if user exists go to app else toast */
 
 const SignIn = () => {
   return (

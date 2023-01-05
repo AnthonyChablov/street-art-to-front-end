@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav className="pt-4 pb-4 bg-neutral-900 w-full top-0 z-50 absolute font-roboto">
-      <div className="container mx-auto">
+      <div className="max-w-screen-xl px-6 mx-auto">
         <ul className="flex justify-between ">
           <li className="">
             <NavLink exact="true" to="/" >
-              <div className="font-empire text-zinc-300 text-4xl">
+              <div className="font-empire text-zinc-300 text-3xl">
                 Street-Art-To
               </div>
             </NavLink> 

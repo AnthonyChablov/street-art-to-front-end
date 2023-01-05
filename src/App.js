@@ -13,6 +13,15 @@ const Error404 = lazy(() => import('./pages/Error404/Error404'));
 const SignIn = lazy(() => import('./pages/SignIn/SignIn'));
 const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
 
+const login = (e)=>{
+  e.preventDefault();
+
+}
+
+const register = (e) =>{
+  e.preventDefault();
+}
+
 
 function App() {
   return (
