@@ -14,11 +14,13 @@ const SignIn = lazy(() => import('./pages/SignIn/SignIn'));
 const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
 const About = lazy(() => import('./pages/About/About'));
 
+/* TODO */
 const login = (e)=>{
   e.preventDefault();
 
 }
 
+/* TODO */
 const register = (e) =>{
   e.preventDefault();
 }

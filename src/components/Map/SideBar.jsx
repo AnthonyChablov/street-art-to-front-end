@@ -12,7 +12,7 @@ import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Menu from './Menu';
 
 /* How much drawer extends outwards */
-const drawerBleeding = 70;
+const drawerBleeding = 65;
 
 const Root = styled('div')(({ theme }) => ({
   height: '100%',
@@ -51,7 +51,7 @@ function SwipeableEdgeDrawer(props) {
         <Global
           styles={{
             '.MuiDrawer-root > .MuiPaper-root': {
-              height: `calc(50% - ${drawerBleeding}px)`,
+              height: `calc(72.5% - ${drawerBleeding}px)`,
               overflow: 'visible',
             },
           }}
@@ -87,7 +87,6 @@ function SwipeableEdgeDrawer(props) {
                 fontFamily:'Empire', 
                 fontSize:'1.75rem',
                 textAlign:'center',
-                
               }}
             >
               M e n u
@@ -95,8 +94,9 @@ function SwipeableEdgeDrawer(props) {
           </StyledBox>
           <StyledBox
             sx={{
-              px: 2,
+              px: 5,
               pb: 2,
+              pt: 2.6,
               height: '100%',
               overflow: 'auto',
             }}
