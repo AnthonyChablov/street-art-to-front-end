@@ -12,6 +12,7 @@ const StartApp = lazy(() => import('./pages/StartApp/StartApp'));
 const Error404 = lazy(() => import('./pages/Error404/Error404'));
 const SignIn = lazy(() => import('./pages/SignIn/SignIn'));
 const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
+const About = lazy(() => import('./pages/About/About'));
 
 const login = (e)=>{
   e.preventDefault();
@@ -27,7 +28,7 @@ function App() {
   return (
     <Router>
       <Suspense fallback={<Loader/>}>
-        <Routes >
+        <Routes>
           <Route 
             path='/' 
             element={<Home/>}
@@ -46,6 +47,11 @@ function App() {
           <Route 
             path='/sign-up' 
             element={<SignUp/>}
+          >
+          </Route>
+          <Route 
+            path='/about' 
+            element={<About/>}
           >
           </Route>
           <Route 

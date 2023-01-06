@@ -7,15 +7,20 @@ const Navigation = () => {
         <ul className="flex justify-between ">
           <li className="">
             <NavLink exact="true" to="/" >
-              <div className="font-empire text-zinc-300 text-3xl">
+              <div className="font-empire text-zinc-300 text-4xl">
                 Street-Art-To
               </div>
             </NavLink> 
           </li>
           <div className="flex items-center">
-            <li className=" ">
+            <li className="mr-7">
+              <NavLink exact="true" to="/about" >
+                <div className=" text-zinc-300 text-md">About</div>
+              </NavLink> 
+            </li>
+            <li className="mr-7">
               <NavLink exact="true" to="/sign-up" >
-                <div className=" text-zinc-300 text-md mr-7">Sign-up</div>
+                <div className=" text-zinc-300 text-md ">Sign-up</div>
               </NavLink> 
             </li>
             <li className="">
@@ -23,6 +28,7 @@ const Navigation = () => {
                 <div className=" text-zinc-300 text-md">Login</div>
               </NavLink> 
             </li>
+            
           </div>
         </ul>
       </div>  

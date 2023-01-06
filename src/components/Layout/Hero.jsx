@@ -1,6 +1,4 @@
-
-import { NavLink } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -17,20 +15,26 @@ const Hero = () => {
             Made In Toronto.
           </strong>
         </h1>
-        <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
+        <p className="mt-4 sm:text-xl sm:leading-relaxed ">
           Discover street-art, graffiti and murals created by the many talented 
           artists throughout Toronto!
         </p>
-        <div className="mt-8 flex flex-wrap gap-4 text-center">
-          <a href="#" className="block w-full rounded bg-sky-800 px-12 py-3 text-sm font-medium text-white shadow 
+        <div className="mt-8 flex flex-wrap gap-4 text-center 
+          justify-center sm:justify-start"
+        >
+          <Link to='/sign-in'>
+            <div className="block w-full rounded bg-sky-800 px-12 py-3 text-sm font-medium text-white shadow 
             hover:bg-sky-600 focus:outline-none focus:ring 
             active:bg-sky-700 sm:w-auto">
-            Get Started
-          </a>
-          <a href="#" className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-sky-600 shadow 
+              Get Started
+            </div>
+          </Link>
+          <Link to='/about'>
+            <div className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-sky-600 shadow 
           hover:bg-sky-100 focus:outline-none focus:ring active:text-sky-700 sm:w-auto">
-            Learn More
-          </a>
+              Learn More
+            </div>
+          </Link>
         </div>
       </div>
     </div>
