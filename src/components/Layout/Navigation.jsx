@@ -28,7 +28,6 @@ const Navigation = () => {
                 <div className=" text-zinc-300 text-md">Login</div>
               </NavLink> 
             </li>
-            
           </div>
         </ul>
       </div>  
