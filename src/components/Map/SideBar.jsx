@@ -6,7 +6,7 @@ import { grey } from '@mui/material/colors';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Menu from './Menu';
+import Menu from './Menu/Menu';
 
 /* How much drawer extends outwards */
 const drawerBleeding = 65;
